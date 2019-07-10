@@ -14,7 +14,6 @@ yum install zabbix-sender
 apt-get install zabbix-sender
 ```
 
-apt-get install zabbix-sender
 **Clone repository**
 ```console
 cd /tmp
