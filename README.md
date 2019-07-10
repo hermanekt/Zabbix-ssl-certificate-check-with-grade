@@ -1,4 +1,4 @@
-# Zabbix-ssl-certificate-check-with-grade
+# Zabbix SSL Certificate template
 This is template and howto for SSL expiration check and grading SSL certificate deployment.
 
 **Monitoring:**
