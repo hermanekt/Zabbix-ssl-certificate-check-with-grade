@@ -26,7 +26,7 @@ chmod +x ssllabs_checker*
 ```
 
 
-**Install GO or copy my compiled package ssllabs-scan (version v1.35.1)**
+## Install GO or copy my compiled package ssllabs-scan (version v1.35.1) ##
 **1) Copy**
 ```console
 cp /tmp/Zabbix-ssl-certificate-check-with-grade/ssllabs-scan /usr/lib/zabbix/externalscripts
@@ -57,7 +57,13 @@ cd && rm -rf /tmp/ssllabs-scan/
 ```console
 rm -rf /tmp/Zabbix-ssl-certificate-check-with-grade
 ```
-** Import template in zabbix frontend**
+## Import template in zabbix frontend ##
+File: Template_SSL_Certificates.xml
+![alt Apache2 latest data](https://github.com/hermanekt/MSSQL-2008-2016-Multi-instance-with-WSFC/raw/master/IMG/MSSQL_LATEST_DATA.jpg)
 
-** Create dummy host and set template** 
+## Create dummy host and set template ##
 Dummy host with hostname is URL name for example https://www.google.com/ hostname is: www.google.com
+**Host connection:**
+![alt Apache2 latest data](https://github.com/hermanekt/MSSQL-2008-2016-Multi-instance-with-WSFC/raw/master/IMG/MSSQL_LATEST_DATA.jpg)
+**Host template:**
+![alt Apache2 latest data](https://github.com/hermanekt/MSSQL-2008-2016-Multi-instance-with-WSFC/raw/master/IMG/MSSQL_LATEST_DATA.jpg)
