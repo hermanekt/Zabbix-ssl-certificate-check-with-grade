@@ -1,2 +1,49 @@
 # Zabbix-ssl-certificate-check-with-grade
 This is template and howto for SSL expiration check and grading SSL certificate deployment.
+
+## Install instruction ##
+
+All operations is needed in zabbix-server or proxy servers.
+
+**Clone repository**
+cd /tmp
+git clone git@github.com:hermanekt/Zabbix-ssl-certificate-check-with-grade.git
+
+**Copy scripts**
+cp /tmp/Zabbix-ssl-certificate-check-with-grade/ssllabs_checker.sh /usr/lib/zabbix/externalscripts
+cp /tmp/Zabbix-ssl-certificate-check-with-grade/ssllabs_checker_at.sh /usr/lib/zabbix/externalscripts
+cp /tmp/Zabbix-ssl-certificate-check-with-grade/zext_ssl_expiry.sh /usr/lib/zabbix/externalscripts
+cp /tmp/Zabbix-ssl-certificate-check-with-grade/zext_ssl_issuer.sh /usr/lib/zabbix/externalscripts
+
+**Enable executing**
+chmod +x zext_ssl_*
+chmod +x ssllabs_checker*
+
+**Install GO or copy my compiled package ssllabs-scan (version v1.35.1)**
+**1) Copy**
+cp /tmp/Zabbix-ssl-certificate-check-with-grade/ssllabs-scan /usr/lib/zabbix/externalscripts
+chmod +x /usr/lib/zabbix/externalscripts/ssllabs-scan
+
+## OR ##
+
+**1) Install golang**
+**CentOS,RHEL**
+yum install golang
+**Debian, Ubuntu**
+apt-get install golang
+
+**2) Compile sslabs-scan package**
+cd /tmp
+git clone https://github.com/ssllabs/ssllabs-scan/
+cd ssllabs-scan/
+go build
+ mv /tmp/ssllabs-scan/ssllabs-scan /usr/lib/zabbix/externalscripts/
+cd && rm -rf /tmp/ssllabs-scan/
+
+**Clean server**
+rm -rf /tmp/Zabbix-ssl-certificate-check-with-grade
+
+** Import template in zabbix frontend
+
+** Create dummy host and set template** 
+Dummy host with hostname is URL name for example https://www.google.com/ hostname is: www.google.com
