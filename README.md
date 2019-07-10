@@ -4,7 +4,16 @@ This is template and howto for SSL expiration check and grading SSL certificate 
 ## Install instruction ##
 
 All operations is needed in zabbix-server or proxy servers.
+**CentOS,RHEL**
+```console
+yum install zabbix-sender
+```
+**Debian, Ubuntu**
+```console
+apt-get install zabbix-sender
+```
 
+apt-get install zabbix-sender
 **Clone repository**
 ```console
 cd /tmp
