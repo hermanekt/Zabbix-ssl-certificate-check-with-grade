@@ -20,7 +20,7 @@ This is template and howto for SSL expiration check and grading SSL certificate 
 
 ## Install instruction ##
 
-All operations is needed in zabbix-server or proxy servers.
+All operations is needed to do at zabbix or proxy servers.
 
 **CentOS,RHEL**
 ```console
