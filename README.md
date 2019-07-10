@@ -1,5 +1,16 @@
 # Zabbix-ssl-certificate-check-with-grade
 This is template and howto for SSL expiration check and grading SSL certificate deployment.
+**Latest data**
+![alt SSL latest data](https://github.com/hermanekt/Zabbix-ssl-certificate-check-with-grade/raw/master/IMG/latest_data.jpg)
+
+**Items**
+![alt SSL items](https://github.com/hermanekt/Zabbix-ssl-certificate-check-with-grade/raw/master/IMG/items.jpg)
+
+**Triggers**
+![alt SSL triggers](https://github.com/hermanekt/Zabbix-ssl-certificate-check-with-grade/raw/master/IMG/triggers.jpg)
+
+**Macros**
+![alt SSL macros](https://github.com/hermanekt/Zabbix-ssl-certificate-check-with-grade/raw/master/IMG/macros.jpg)
 
 ## Install instruction ##
 
@@ -67,14 +78,13 @@ cd && rm -rf /tmp/ssllabs-scan/
 rm -rf /tmp/Zabbix-ssl-certificate-check-with-grade
 ```
 ## Import template in zabbix frontend ##
-File: Template_SSL_Certificates.xml
-https://github.com/hermanekt/Zabbix-ssl-certificate-check-with-grade/raw/master/Template_SSL_Certificates.xml
+File: [Template_SSL_Certificates.xml](https://github.com/hermanekt/Zabbix-ssl-certificate-check-with-grade/raw/master/Template_SSL_Certificates.xml)
 
 ## Create dummy host and set template ##
 Dummy host with hostname is URL name for example https://www.google.com/ hostname is: www.google.com
 
 **Host connection:**
-![alt Apache2 latest data](https://github.com/hermanekt/Zabbix-ssl-certificate-check-with-grade/raw/master/IMG/host_conn.jpg)
+![alt SSL Host Connection](https://github.com/hermanekt/Zabbix-ssl-certificate-check-with-grade/raw/master/IMG/host_conn.jpg)
 
 **Host template:**
-![alt Apache2 latest data](https://github.com/hermanekt/Zabbix-ssl-certificate-check-with-grade/raw/master/IMG/host_template.jpg)
+![alt SSL Host template](https://github.com/hermanekt/Zabbix-ssl-certificate-check-with-grade/raw/master/IMG/host_template.jpg)
