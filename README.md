@@ -80,7 +80,7 @@ mv /tmp/ssllabs-scan/ssllabs-scan /usr/lib/zabbix/externalscripts/
 cd && rm -rf /tmp/ssllabs-scan/
 ```
 
-##Clean server##
+## Clean server ##
 ```console
 rm -rf /tmp/Zabbix-ssl-certificate-check-with-grade
 ```
