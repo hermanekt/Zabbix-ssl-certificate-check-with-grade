@@ -1,5 +1,7 @@
 # Zabbix SSL Certificate template
 This is template and howto for SSL expiration check and grading SSL certificate deployment.
+Template pro kontrolu expirace, provozu a externi hodnoceni nasazeni
+
 
 **Monitoring:**
 1) Running HTTPS service (port)
@@ -22,6 +24,7 @@ This is template and howto for SSL expiration check and grading SSL certificate 
 ## Install instruction ##
 
 All operations is needed to do at zabbix or proxy servers.
+Nasledujci kroky musi byt provedeney na zabbix pripadne proxy serverch.
 
 **CentOS,RHEL**
 ```console
@@ -52,8 +55,9 @@ chmod +x zext_ssl_*
 chmod +x ssllabs_checker*
 ```
 
-
+Zde mate 2 moznosti bud pouzit uz zbuildeny balicek a nebo si pripadne zbuildit svuj vlastni.
 ## Install GO or copy my compiled package ssllabs-scan (version v1.35.1) ##
+
 **1) Copy**
 ```console
 cp /tmp/Zabbix-ssl-certificate-check-with-grade/ssllabs-scan /usr/lib/zabbix/externalscripts
@@ -61,7 +65,7 @@ chmod +x /usr/lib/zabbix/externalscripts/ssllabs-scan
 ```
 ## OR ##
 
-**1) Install golang**
+**1) Install GOlang**
 **CentOS,RHEL**
 ```console
 yum install golang
@@ -70,7 +74,7 @@ yum install golang
 ```console
 apt-get install golang
 ```
-**2) Compile sslabs-scan package**
+**2) Build sslabs-scan package**
 ```console
 cd /tmp
 git clone https://github.com/ssllabs/ssllabs-scan/
@@ -88,6 +92,7 @@ rm -rf /tmp/Zabbix-ssl-certificate-check-with-grade
 File: [Template_SSL_Certificates.xml](https://github.com/hermanekt/Zabbix-ssl-certificate-check-with-grade/raw/master/Template_SSL_Certificates.xml)
 
 ## Create dummy host and set template ##
+Jako hostname je pouzita url adressa bez https 
 Dummy host with hostname is URL name for example https://www.google.com/ hostname is: www.google.com
 
 **Host connection:**
