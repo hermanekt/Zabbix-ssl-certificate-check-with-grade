@@ -95,3 +95,5 @@ Dummy host with hostname is URL name for example https://www.google.com/ hostnam
 
 **Host template:**
 ![alt SSL Host template](https://github.com/hermanekt/Zabbix-ssl-certificate-check-with-grade/raw/master/IMG/host_template.jpg)
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=GEH7YJEBWTFWE&currency_code=USD&source=url)
