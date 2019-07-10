@@ -1,6 +1,11 @@
 # Zabbix-ssl-certificate-check-with-grade
 This is template and howto for SSL expiration check and grading SSL certificate deployment.
 
+**Monitoring:**
+1)Certificate issuer
+2)Certificate expiration
+3)Certificate installation grade with [SSL Labs](https://www.ssllabs.com/) API.
+
 **Latest data**
 ![alt SSL latest data](https://github.com/hermanekt/Zabbix-ssl-certificate-check-with-grade/raw/master/IMG/latest_data.jpg)
 
