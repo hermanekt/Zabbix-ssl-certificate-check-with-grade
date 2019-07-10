@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
-    <version>4.2</version>
-    <date>2019-07-04T10:45:43Z</date>
+    <version>2.0</version>
+    <date>2019-07-10T15:17:24Z</date>
     <groups>
         <group>
             <name>HermanekTomas</name>
@@ -11,7 +11,6 @@
         <template>
             <template>SSL Certificates</template>
             <name>SSL Certificates</name>
-            <description/>
             <groups>
                 <group>
                     <name>HermanekTomas</name>
@@ -33,15 +32,17 @@
                     <name>HTTPS Service is running</name>
                     <type>3</type>
                     <snmp_community/>
+                    <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>net.tcp.service[https]</key>
-                    <delay>1m</delay>
-                    <history>7d</history>
-                    <trends>90d</trends>
+                    <delay>60</delay>
+                    <history>7</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
+                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -49,8 +50,11 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
+                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -67,42 +71,22 @@
                     <valuemap>
                         <name>Service state</name>
                     </valuemap>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
-                    <status_codes>200</status_codes>
-                    <follow_redirects>1</follow_redirects>
-                    <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
-                    <retrieve_mode>0</retrieve_mode>
-                    <request_method>0</request_method>
-                    <output_format>0</output_format>
-                    <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
-                    <verify_peer>0</verify_peer>
-                    <verify_host>0</verify_host>
-                    <master_item/>
                 </item>
                 <item>
                     <name>SSL Certificate Grade</name>
                     <type>2</type>
                     <snmp_community/>
+                    <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>ssllabs.certificate.grade</key>
                     <delay>0</delay>
-                    <history>90d</history>
+                    <history>90</history>
                     <trends>0</trends>
                     <status>0</status>
                     <value_type>4</value_type>
                     <allowed_hosts/>
                     <units/>
+                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -110,8 +94,11 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
+                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -126,42 +113,22 @@
                         </application>
                     </applications>
                     <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
-                    <status_codes>200</status_codes>
-                    <follow_redirects>1</follow_redirects>
-                    <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
-                    <retrieve_mode>0</retrieve_mode>
-                    <request_method>0</request_method>
-                    <output_format>0</output_format>
-                    <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
-                    <verify_peer>0</verify_peer>
-                    <verify_host>0</verify_host>
-                    <master_item/>
                 </item>
                 <item>
                     <name>SSL Certificate Grade background script</name>
                     <type>10</type>
                     <snmp_community/>
+                    <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>ssllabs_checker_at.sh[{HOST.HOST}]</key>
-                    <delay>1h</delay>
-                    <history>0d</history>
+                    <delay>43200</delay>
+                    <history>0</history>
                     <trends>0</trends>
                     <status>0</status>
                     <value_type>4</value_type>
                     <allowed_hosts/>
                     <units/>
+                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -169,8 +136,11 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
+                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -185,101 +155,22 @@
                         </application>
                     </applications>
                     <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
-                    <status_codes>200</status_codes>
-                    <follow_redirects>1</follow_redirects>
-                    <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
-                    <retrieve_mode>0</retrieve_mode>
-                    <request_method>0</request_method>
-                    <output_format>0</output_format>
-                    <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
-                    <verify_peer>0</verify_peer>
-                    <verify_host>0</verify_host>
-                    <master_item/>
-                </item>
-                <item>
-                    <name>SSL certificate validity</name>
-                    <type>10</type>
-                    <snmp_community/>
-                    <snmp_oid/>
-                    <key>zext_ssl_expiry.sh[{HOST.HOST},{$SSL_PORT},{HOST.HOST}]</key>
-                    <delay>1h</delay>
-                    <history>7d</history>
-                    <trends>90d</trends>
-                    <status>0</status>
-                    <value_type>0</value_type>
-                    <allowed_hosts/>
-                    <units>days</units>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>SSL Certificate</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
-                    <status_codes>200</status_codes>
-                    <follow_redirects>1</follow_redirects>
-                    <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
-                    <retrieve_mode>0</retrieve_mode>
-                    <request_method>0</request_method>
-                    <output_format>0</output_format>
-                    <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
-                    <verify_peer>0</verify_peer>
-                    <verify_host>0</verify_host>
-                    <master_item/>
                 </item>
                 <item>
                     <name>SSL certificate issuer</name>
                     <type>10</type>
                     <snmp_community/>
+                    <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>zext_ssl_issuer.sh[{HOST.HOST},{$SSL_PORT},{HOST.HOST}]</key>
-                    <delay>24h</delay>
-                    <history>90d</history>
+                    <delay>86400</delay>
+                    <history>90</history>
                     <trends>0</trends>
                     <status>0</status>
                     <value_type>4</value_type>
                     <allowed_hosts/>
                     <units/>
+                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -287,8 +178,11 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
+                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -303,39 +197,51 @@
                         </application>
                     </applications>
                     <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing>
-                        <step>
-                            <type>3</type>
-                            <params>issuer= </params>
-                            <error_handler>0</error_handler>
-                            <error_handler_params/>
-                        </step>
-                    </preprocessing>
-                    <jmx_endpoint/>
-                    <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
-                    <status_codes>200</status_codes>
-                    <follow_redirects>1</follow_redirects>
-                    <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
-                    <retrieve_mode>0</retrieve_mode>
-                    <request_method>0</request_method>
-                    <output_format>0</output_format>
-                    <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
-                    <verify_peer>0</verify_peer>
-                    <verify_host>0</verify_host>
-                    <master_item/>
+                </item>
+                <item>
+                    <name>SSL certificate validity</name>
+                    <type>10</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>zext_ssl_expiry.sh[{HOST.HOST},{$SSL_PORT},{HOST.HOST}]</key>
+                    <delay>3600</delay>
+                    <history>7</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units>days</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>SSL Certificate</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
                 </item>
             </items>
             <discovery_rules/>
-            <httptests/>
             <macros>
                 <macro>
                     <macro>{$SSL_EXPIRY_AVG}</macro>
@@ -364,263 +270,173 @@
             </macros>
             <templates/>
             <screens/>
-            <tags/>
         </template>
     </templates>
     <triggers>
         <trigger>
             <expression>{SSL Certificates:ssllabs.certificate.grade.str(A)}=1</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
             <name>Certificate {HOST.HOST} grade is A</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
             <url/>
             <status>1</status>
             <priority>1</priority>
             <description/>
             <type>0</type>
-            <manual_close>0</manual_close>
             <dependencies/>
-            <tags/>
         </trigger>
         <trigger>
             <expression>{SSL Certificates:ssllabs.certificate.grade.str(A+)}=1</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
             <name>Certificate {HOST.HOST} grade is A+</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
             <url/>
             <status>1</status>
             <priority>1</priority>
             <description/>
             <type>0</type>
-            <manual_close>0</manual_close>
             <dependencies/>
-            <tags/>
         </trigger>
         <trigger>
             <expression>{SSL Certificates:ssllabs.certificate.grade.str(B)}=1</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
             <name>Certificate {HOST.HOST} grade is B</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>2</priority>
             <description/>
             <type>0</type>
-            <manual_close>0</manual_close>
             <dependencies/>
-            <tags/>
         </trigger>
         <trigger>
             <expression>{SSL Certificates:ssllabs.certificate.grade.str(C)}=1</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
             <name>Certificate {HOST.HOST} grade is C</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>2</priority>
             <description/>
             <type>0</type>
-            <manual_close>0</manual_close>
             <dependencies/>
-            <tags/>
         </trigger>
         <trigger>
             <expression>{SSL Certificates:ssllabs.certificate.grade.str(D)}=1</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
             <name>Certificate {HOST.HOST} grade is D</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>3</priority>
             <description/>
             <type>0</type>
-            <manual_close>0</manual_close>
             <dependencies/>
-            <tags/>
         </trigger>
         <trigger>
             <expression>{SSL Certificates:ssllabs.certificate.grade.str(F)}=1</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
             <name>Certificate {HOST.HOST} grade is F</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>4</priority>
             <description/>
             <type>0</type>
-            <manual_close>0</manual_close>
             <dependencies/>
-            <tags/>
         </trigger>
         <trigger>
             <expression>{SSL Certificates:zext_ssl_issuer.sh[{HOST.HOST},{$SSL_PORT},{HOST.HOST}].change()}&gt;0</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
             <name>Change in SSL Certificate Issuer</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
             <url>https://{$SSL_HOST}:{$SSL_PORT}</url>
             <status>0</status>
             <priority>1</priority>
             <description/>
             <type>0</type>
-            <manual_close>1</manual_close>
             <dependencies/>
-            <tags/>
         </trigger>
         <trigger>
             <expression>{SSL Certificates:net.tcp.service[https].max(5m)}&lt;1</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
             <name>HTTPS Service is Down</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>2</priority>
             <description/>
             <type>0</type>
-            <manual_close>0</manual_close>
             <dependencies/>
-            <tags/>
         </trigger>
         <trigger>
             <expression>{SSL Certificates:zext_ssl_expiry.sh[{HOST.HOST},{$SSL_PORT},{HOST.HOST}].last(0)}&lt;0</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
             <name>SSL certificate on {HOST.HOST} expired</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>5</priority>
             <description/>
             <type>0</type>
-            <manual_close>0</manual_close>
             <dependencies/>
-            <tags/>
         </trigger>
         <trigger>
             <expression>{SSL Certificates:zext_ssl_expiry.sh[{HOST.HOST},{$SSL_PORT},{HOST.HOST}].last(5)}&lt;{$SSL_EXPIRY_AVG}</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
             <name>SSL certificate on {HOST.HOST} expires in less than {$SSL_EXPIRY_AVG} days ({ITEM.VALUE} days remaining)</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>3</priority>
             <description/>
             <type>0</type>
-            <manual_close>0</manual_close>
             <dependencies>
                 <dependency>
                     <name>SSL certificate on {HOST.HOST} expires in less than {$SSL_EXPIRY_HIGH} days ({ITEM.VALUE} days remaining)</name>
                     <expression>{SSL Certificates:zext_ssl_expiry.sh[{HOST.HOST},{$SSL_PORT},{HOST.HOST}].last(5)}&lt;{$SSL_EXPIRY_HIGH}</expression>
-                    <recovery_expression/>
                 </dependency>
             </dependencies>
-            <tags/>
         </trigger>
         <trigger>
             <expression>{SSL Certificates:zext_ssl_expiry.sh[{HOST.HOST},{$SSL_PORT},{HOST.HOST}].last(5)}&lt;{$SSL_EXPIRY_HIGH}</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
             <name>SSL certificate on {HOST.HOST} expires in less than {$SSL_EXPIRY_HIGH} days ({ITEM.VALUE} days remaining)</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>4</priority>
             <description/>
             <type>0</type>
-            <manual_close>0</manual_close>
             <dependencies>
                 <dependency>
                     <name>SSL certificate on {HOST.HOST} expired</name>
                     <expression>{SSL Certificates:zext_ssl_expiry.sh[{HOST.HOST},{$SSL_PORT},{HOST.HOST}].last(0)}&lt;0</expression>
-                    <recovery_expression/>
                 </dependency>
             </dependencies>
-            <tags/>
         </trigger>
         <trigger>
             <expression>{SSL Certificates:zext_ssl_expiry.sh[{HOST.HOST},{$SSL_PORT},{HOST.HOST}].last(5)}&lt;{$SSL_EXPIRY_INFO}</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
             <name>SSL certificate on {HOST.HOST} expires in less than {$SSL_EXPIRY_INFO} days ({ITEM.VALUE} days remaining)</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>1</priority>
             <description/>
             <type>0</type>
-            <manual_close>0</manual_close>
             <dependencies>
                 <dependency>
                     <name>SSL certificate on {HOST.HOST} expires in less than {$SSL_EXPIRY_WARN} days ({ITEM.VALUE} days remaining)</name>
                     <expression>{SSL Certificates:zext_ssl_expiry.sh[{HOST.HOST},{$SSL_PORT},{HOST.HOST}].last(5)}&lt;{$SSL_EXPIRY_WARN}</expression>
-                    <recovery_expression/>
                 </dependency>
             </dependencies>
-            <tags/>
         </trigger>
         <trigger>
             <expression>{SSL Certificates:zext_ssl_expiry.sh[{HOST.HOST},{$SSL_PORT},{HOST.HOST}].last(5)}&lt;{$SSL_EXPIRY_NOTCLASSIFIED}</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
             <name>SSL certificate on {HOST.HOST} expires in less than {$SSL_EXPIRY_NOTCLASSIFIED} days ({ITEM.VALUE} days remaining)</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>0</priority>
             <description/>
             <type>0</type>
-            <manual_close>0</manual_close>
             <dependencies>
                 <dependency>
                     <name>SSL certificate on {HOST.HOST} expires in less than {$SSL_EXPIRY_INFO} days ({ITEM.VALUE} days remaining)</name>
                     <expression>{SSL Certificates:zext_ssl_expiry.sh[{HOST.HOST},{$SSL_PORT},{HOST.HOST}].last(5)}&lt;{$SSL_EXPIRY_INFO}</expression>
-                    <recovery_expression/>
                 </dependency>
             </dependencies>
-            <tags/>
         </trigger>
         <trigger>
             <expression>{SSL Certificates:zext_ssl_expiry.sh[{HOST.HOST},{$SSL_PORT},{HOST.HOST}].last(5)}&lt;{$SSL_EXPIRY_WARN}</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
             <name>SSL certificate on {HOST.HOST} expires in less than {$SSL_EXPIRY_WARN} days ({ITEM.VALUE} days remaining)</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>2</priority>
             <description/>
             <type>0</type>
-            <manual_close>0</manual_close>
             <dependencies>
                 <dependency>
                     <name>SSL certificate on {HOST.HOST} expires in less than {$SSL_EXPIRY_AVG} days ({ITEM.VALUE} days remaining)</name>
                     <expression>{SSL Certificates:zext_ssl_expiry.sh[{HOST.HOST},{$SSL_PORT},{HOST.HOST}].last(5)}&lt;{$SSL_EXPIRY_AVG}</expression>
-                    <recovery_expression/>
                 </dependency>
             </dependencies>
-            <tags/>
         </trigger>
     </triggers>
     <graphs>
@@ -657,19 +473,4 @@
             </graph_items>
         </graph>
     </graphs>
-    <value_maps>
-        <value_map>
-            <name>Service state</name>
-            <mappings>
-                <mapping>
-                    <value>0</value>
-                    <newvalue>Down</newvalue>
-                </mapping>
-                <mapping>
-                    <value>1</value>
-                    <newvalue>Up</newvalue>
-                </mapping>
-            </mappings>
-        </value_map>
-    </value_maps>
 </zabbix_export>
