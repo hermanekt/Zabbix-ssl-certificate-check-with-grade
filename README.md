@@ -89,8 +89,7 @@ rm -rf /tmp/Zabbix-ssl-certificate-check-with-grade
 ## Import the template to zabbix frontend ##
 File: [Template_SSL_Certificates.xml](https://github.com/hermanekt/Zabbix-ssl-certificate-check-with-grade/raw/master/Template_SSL_Certificates.xml)
 
-## Create dummy host and link the template to it ##
-Jako hostname je pouzita url adressa bez https 
+## Create dummy host and link the template to it ## 
 Dummy host with hostname is URL name for example https://www.google.com/ hostname is: www.google.com
 
 **Host connection:**
