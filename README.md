@@ -35,7 +35,7 @@ apt-get install zabbix-sender
 **Clone the repository**
 ```console
 cd /tmp
-git clone git@github.com:hermanekt/Zabbix-ssl-certificate-check-with-grade.git
+git clone https://github.com/hermanekt/Zabbix-ssl-certificate-check-with-grade.git
 ```
 
 **Copy scripts to their respective locations**
