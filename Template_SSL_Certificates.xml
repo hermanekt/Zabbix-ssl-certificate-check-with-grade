@@ -71,6 +71,7 @@
                     <valuemap>
                         <name>Service state</name>
                     </valuemap>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>SSL Certificate Grade</name>
@@ -113,6 +114,7 @@
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>SSL Certificate Grade background script</name>
@@ -155,6 +157,7 @@
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>SSL certificate issuer</name>
@@ -197,6 +200,7 @@
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>SSL certificate validity</name>
@@ -239,6 +243,7 @@
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
             </items>
             <discovery_rules/>
