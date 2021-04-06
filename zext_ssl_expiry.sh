@@ -1,6 +1,6 @@
 #! /bin/sh
 SERVER=$1
-TIMEOUT=5
+TIMEOUT=2
 RETVAL=0
 SNI=$3
 TIMESTAMP=`echo | date`
