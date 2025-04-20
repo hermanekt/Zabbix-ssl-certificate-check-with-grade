@@ -1,4 +1,22 @@
 # Zabbix SSL Certificate template (grading included)
+> ## ⚠️ Project retired – please migrate
+>
+> **This repository is no longer maintained.**  
+> Development continues in a dedicated, consolidated repo:
+>
+> **https://github.com/initMAX/Zabbix-Templates/tree/production/free/SSL_Labs_Certificate_Grade**
+>
+> ### Why move?
+> * **Zero external scripts** – everything now runs as a native *Script item* on Zabbix 7.0+.
+> * **Automatic API registration** – the template registers the e‑mail on first run; no curl or manual step required.
+> * **Port flexibility** – supports the only public API ports allowed by SSL Labs (443, 8443, 10443).
+> * **Clean triggers & menu link** – built‑in grade triggers (A+ → F) and a one‑click link to the full SSL Labs report.
+> * **Single source of truth** – all initMAX public templates live in one place, with version tags and release notes.
+>
+> ---
+> Please update your bookmarks and open issues/PRs in the new repository.  
+> Thank you for using initMAX templates!
+
 This a guide on howto deploy and configure this template for SSL expiration check and grading SSL certificate deployment.
 
 **Monitoring:**
